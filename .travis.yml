@@ -1,19 +1,22 @@
-
-
 services:
-  - docker
-
+- docker
 env:
+  matrix:
   - IMAGE=ansible VERSION=debian-buster
   - IMAGE=ansible VERSION=ezp-collections
-
+  global:
+  - secure: AA6MoFtEBztaFv/T8D2RBFZ0HR/kAN+dZmh1+00b/2Zgt3Ibi9x4DctieghJrQ8Bb909HfQRpwS/SjR5Do1wrkkaGk8RtrTcK+u3OfHiYq5eudpQneYHaqMFAsebO4X/0FfZq0IrKe8LEXKZA36X2OOTqorFzGp2W2ySkdIRO82julr1gq/hEjXRau0RzEYxioze/H7MYvlVNCd61m3XP3ds+YsOTZGpihlBke3o0hS82ZW7v75uqEgYsA54wUqcCkQr1uOBwlqv9AGkfDXHNhnEUaXnAeqscg1LN6YcqeGV0p27dnZ7vClTKmbfARBl0QcDKlNo2mzy2TP9ZUbPoUyvUOdZo+ZWKP9Ct40+PGYy+HRAOjbR9enIpRxWhH3ASIEBrHRtKxXRkKadVJ2LGxALXL8YV6uRjve/XHoeIdFQ774t46VyLtSUjAZkKEbsFcTjNYu5Gt2d6Mbn/qccjju//A1j1NE2+QT1r/4Uadi2/5BaG/KdPH0zXaJFdwGd9clu9kLH7r0R3RIPFauMguSivqWGj262LazpxPV+QeMFPhhBJGiGx3TManUA2g4bx/cUNfJmzo366RjSnKnJX+P6tM5/6cbCGNqAMGT4qIO9+rvLtuwf36yMCSFJUhcezMTtwAR/k2Fu+uNaDT4EsYupERwgExXbxK8B8yfkW/0=
+  - secure: OeM9IdolAG/PA3ESeYCAIlr4lL74KrYq88dzgsGR5VMhUlcFmKQAEloWsCA8FKNC6NuY1O7fus2fPn//kx1J2EqU0NqLmMVL74inHSDUk+gAf3ae8HOXf6JH0Ig8u2OgMMS+VNsG5uoQ9AQmrqP5Q+5JbsKD99z6le3KDYYKFpu5kN5lCs4awYX64i3ba2vsqiwXqV00BIzex2NSJ/Ez7OeFAmiY7NdK5PF+q/sNfC75mlf0Ez80IhDPpIN3CBqL8A3DA4nOUXT0Huygyy6GR1RQZlKyTPFWGw96thvAa5sIIbdFgxYDzgfZBrhwjrgDjA60Z1E1vS7fkxz0kZ0ye3o78GnNbWoIwaddm0YT+D2gb4AohkXu6vduDIdVyYQ50SDphy+4IUVefSxtqqb8keAbRoUQV6ACb4cnATd3ZoOHcVqBf+qzTk3oowCFtWSOrJkAPTEI+E+TiGeFwY4Xf8xCJ+jj/Iwi6ByJ64HT4JGpHEg4yVUEAoM6rleQOSwFdq8CzzP9X9JyMr82rg4Lm/GrAY6ejr3A94btgKTpnB7NKiS06z4LDbECcg5uHXFulo/VZI/6gW1E9v/TiJI0l2OM/7VXDHm6nRfpTBLbAJbrfnr3+3pj3LRIk+4wfTQCPlix7aOQcRmAk1KswChz7h4bAd4FbFh+UV57x/Y8vGs=
 before_script:
-  - env | sort
-  - cd "$IMAGE/$VERSION"
-  - image="$IMAGE:$VERSION"
-
+- env | sort
+- cd "$IMAGE/$VERSION"
+- image="$IMAGE:$VERSION"
 script:
-  - docker build -t "$image" .
-
+- docker build -t "$image" .
 after_script:
-  - docker images
+- docker images
+deploy:
+  provider: script
+  script: deploy.sh
+  on:
+    branch: master

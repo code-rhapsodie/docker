@@ -1,0 +1,17 @@
+stages:
+  - build
+
+.build: &build
+  stage: build
+  tags: ["docker"]
+  script:
+    - cd ansible && sh ./build.sh
+
+build images on schedules:
+  <<: *build
+  only:
+    - schedules
+
+build images manually:
+  <<: *build
+  when: manual

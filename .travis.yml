@@ -13,7 +13,7 @@ before_script:
 - image="$IMAGE:$VERSION"
 script:
 - if [[ -f pre.sh ]]; then
-    ./pre.sh
+    sh ./pre.sh;
   fi
 - docker build -t "$image" .
 after_script:

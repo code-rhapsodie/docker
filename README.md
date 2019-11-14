@@ -23,6 +23,10 @@ $ travis encrypt GITHUB_USERNAME=XXXX --add env.global
 $ travis encrypt GITHUB_PASSWORD=XXXX --add env.global
 ```
 
+## Contribute
+
+Documentation: when modifying the documention please add `[ci skip]` in the commit message.
+
 ## Todo
 
 - make it possible to reuse one of the existing built image during the same build

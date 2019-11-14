@@ -5,7 +5,7 @@ services:
 
 env:
   - IMAGE=ansible VERSION=debian-buster
-  - IMAGE=ansible VERSION=debian-buster-with-collections
+  - IMAGE=ansible VERSION=ezp-collections
 
 before_script:
   - env | sort

@@ -1,5 +1,19 @@
+
+
 services:
   - docker
 
+env:
+  - IMAGE=ansible VERSION=debian-buster
+  - IMAGE=ansible VERSION=debian-buster-with-collections
+
+before_script:
+  - env | sort
+  - cd "$IMAGE/$VERSION"
+  - image="$IMAGE:$VERSION"
+
 script:
-  - cd ansible && sh ./build.sh
+  - docker build -t "$image" .
+
+after_script:
+  - docker images

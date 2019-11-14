@@ -1,5 +1,7 @@
 # Docker images
 
+[![Build Status](https://travis-ci.org/code-rhapsodie/docker.svg?branch=master)](https://travis-ci.org/code-rhapsodie/docker)
+
 ## Usage
 
 docker pull docker.pkg.github.com/code-rhapsodie/docker/<IMAGE>:<VERSION>

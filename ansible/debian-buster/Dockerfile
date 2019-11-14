@@ -9,7 +9,7 @@ RUN apt-get update -y && \
 RUN pip install ansible
 
 RUN apt-get clean
-RUN rm -rf /var/lib/apt/lists/*  /tmp/*
+RUN rm -rf /var/lib/apt/lists/* /tmp/*
 
 # default command: display Ansible version
 CMD [ "ansible-playbook", "--version" ]

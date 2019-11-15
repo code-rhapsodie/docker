@@ -8,7 +8,9 @@ List of available images: https://github.com/code-rhapsodie/docker/packages
 
 ## Usage
 
+```
 docker pull docker.pkg.github.com/code-rhapsodie/docker/<IMAGE>:<VERSION>
+```
 
 ## Add new image
 

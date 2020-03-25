@@ -6,6 +6,7 @@ env:
   - IMAGE=ansible        VERSION=ezplatform-toolbox
   - IMAGE=docker-compose VERSION=latest
   - IMAGE=docker-compose VERSION=19.03.1
+  - IMAGE=docker-compose VERSION=19.03.1-dind
 
   global:
   - secure: AA6MoFtEBztaFv/T8D2RBFZ0HR/kAN+dZmh1+00b/2Zgt3Ibi9x4DctieghJrQ8Bb909HfQRpwS/SjR5Do1wrkkaGk8RtrTcK+u3OfHiYq5eudpQneYHaqMFAsebO4X/0FfZq0IrKe8LEXKZA36X2OOTqorFzGp2W2ySkdIRO82julr1gq/hEjXRau0RzEYxioze/H7MYvlVNCd61m3XP3ds+YsOTZGpihlBke3o0hS82ZW7v75uqEgYsA54wUqcCkQr1uOBwlqv9AGkfDXHNhnEUaXnAeqscg1LN6YcqeGV0p27dnZ7vClTKmbfARBl0QcDKlNo2mzy2TP9ZUbPoUyvUOdZo+ZWKP9Ct40+PGYy+HRAOjbR9enIpRxWhH3ASIEBrHRtKxXRkKadVJ2LGxALXL8YV6uRjve/XHoeIdFQ774t46VyLtSUjAZkKEbsFcTjNYu5Gt2d6Mbn/qccjju//A1j1NE2+QT1r/4Uadi2/5BaG/KdPH0zXaJFdwGd9clu9kLH7r0R3RIPFauMguSivqWGj262LazpxPV+QeMFPhhBJGiGx3TManUA2g4bx/cUNfJmzo366RjSnKnJX+P6tM5/6cbCGNqAMGT4qIO9+rvLtuwf36yMCSFJUhcezMTtwAR/k2Fu+uNaDT4EsYupERwgExXbxK8B8yfkW/0=

@@ -1,6 +1,6 @@
 # Docker images
 
-[![Build Status](https://travis-ci.org/code-rhapsodie/docker.svg?branch=master)](https://travis-ci.org/code-rhapsodie/docker)
+[![Build Status](https://travis-ci.com/code-rhapsodie/docker.svg?branch=master)](https://travis-ci.com/code-rhapsodie/docker)
 
 This repository holds reusable images we need to build or extend very often.
 

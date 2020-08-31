@@ -17,7 +17,7 @@ or
 https://hub.docker.com/repository/docker/coderhapsodie/docker
 
 ```
-docker pull coderhapsodie/docker:<IMAGE>/<VERSION>
+docker pull coderhapsodie/docker:<IMAGE>-<VERSION>
 ```
 
 ## Add new image

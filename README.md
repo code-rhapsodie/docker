@@ -12,6 +12,14 @@ List of available images: https://github.com/code-rhapsodie/docker/packages
 docker pull docker.pkg.github.com/code-rhapsodie/docker/<IMAGE>:<VERSION>
 ```
 
+or 
+
+https://hub.docker.com/repository/docker/coderhapsodie/docker
+
+```
+docker pull coderhapsodie/docker:<IMAGE>/<VERSION>
+```
+
 ## Add new image
 
 1) create a folder `myimage`

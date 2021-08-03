@@ -1,4 +1,5 @@
-FROM docker:latest
+FROM docker:20.10.7-dind
+MAINTAINER Arnaud Lafon <arnaud.lafon@gmail.com>
 
 RUN apk add --no-cache --update \
 	py-pip \

@@ -1,3 +1,4 @@
+# Debian image with ansible and basic tools such as make and git
 FROM python:3-buster
 MAINTAINER Arnaud Lafon <arnaud.lafon@gmail.com>
 

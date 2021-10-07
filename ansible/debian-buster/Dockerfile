@@ -1,3 +1,4 @@
+# Debian image with ansible only
 FROM python:3-buster
 MAINTAINER Arnaud Lafon <arnaud.lafon@gmail.com>
 

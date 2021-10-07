@@ -1,3 +1,4 @@
+# Ansible image with ezplatform toolbox collection installed
 FROM python:3-buster
 MAINTAINER Arnaud Lafon <arnaud.lafon@gmail.com>
 

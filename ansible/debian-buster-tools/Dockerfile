@@ -2,7 +2,7 @@
 FROM python:3-buster
 MAINTAINER Arnaud Lafon <arnaud.lafon@gmail.com>
 
-RUN apt-get update && apt-get install -y openssh-client make git && \
+RUN apt-get update && apt-get install -y openssh-client make git rsync && \
 	pip install ansible && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/*
 

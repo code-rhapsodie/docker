@@ -1,3 +1,5 @@
+TODO: move to github actions and update documentation
+
 # Docker images
 
 [![Build Status](https://travis-ci.com/code-rhapsodie/docker.svg?branch=master)](https://travis-ci.com/code-rhapsodie/docker)

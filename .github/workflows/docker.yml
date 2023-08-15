@@ -39,4 +39,4 @@ jobs:
           context: "./${{ matrix.image }}/${{ matrix.subdir }}"
           file: ./Dockerfile
           push: true
-          tags: "${{ matrix.image }}:${{ matrix.subdir }}:latest"
+          tags: "${{ matrix.image }}:${{ matrix.subdir }}"

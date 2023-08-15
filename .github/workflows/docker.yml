@@ -39,4 +39,4 @@ jobs:
           context: "{{defaultContext}}:${{ matrix.image }}/${{ matrix.subdir }}"
           file: ./Dockerfile
           push: true
-          tags: "${{ matrix.image }}:${{ matrix.subdir }}"
+          tags: ghcr.io/code-rhapsodie/docker/"${{ matrix.image }}:${{ matrix.subdir }}"

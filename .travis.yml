@@ -2,9 +2,6 @@ services:
 - docker
 env:
   matrix:
-  - IMAGE=ansible        VERSION=debian-buster
-  - IMAGE=ansible        VERSION=debian-buster-tools
-  - IMAGE=ansible        VERSION=ezplatform-toolbox
   - IMAGE=docker-compose VERSION=latest
   - IMAGE=docker-compose VERSION=19.03.1
   - IMAGE=docker-compose VERSION=19.03.1-dind

@@ -19,6 +19,8 @@ jobs:
             subdir: ezplatform-toolbox
           - image: docker-compose
             subdir: latest
+          - image: ansible
+            subdir: alpine
     steps:
       - 
         name: Set up QEMU

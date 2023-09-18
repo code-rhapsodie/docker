@@ -17,6 +17,8 @@ jobs:
             subdir: debian-buster-tools
           - image: ansible
             subdir: ezplatform-toolbox
+          - image: docker-compose
+            subdir: latest
     steps:
       - 
         name: Set up QEMU

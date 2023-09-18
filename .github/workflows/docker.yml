@@ -21,6 +21,8 @@ jobs:
             subdir: latest
           - image: ansible
             subdir: alpine
+          - image: php
+            subdir: 7.4-fpm-node10
     steps:
       - 
         name: Set up QEMU

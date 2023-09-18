@@ -2,7 +2,7 @@ TODO: move to github actions and update documentation
 
 # Docker images
 
-[![Build Status](https://travis-ci.com/code-rhapsodie/docker.svg?branch=master)](https://travis-ci.com/code-rhapsodie/docker)
+![CI status](https://github.com/code-rhapsodie/docker/actions/workflows/docker.yml/badge.svg)
 
 This repository holds reusable images we need to build or extend very often.
 

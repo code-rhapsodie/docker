@@ -23,6 +23,8 @@ jobs:
             subdir: alpine
           - image: php
             subdir: 7.4-fpm-node10
+          - image: php
+            subdir: 8.2-fpm            
     steps:
       - 
         name: Set up QEMU

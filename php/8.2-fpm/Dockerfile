@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install -y yarn && rm -rf /var/lib/apt/lists/*
 RUN pecl install -o -f redis apcu amqp \
     && docker-php-ext-enable redis apcu amqp \
     && docker-php-ext-configure intl \
-    && docker-php-ext-install zip intl
+    && docker-php-ext-configure pcntl --enable-pcntl \
+    && docker-php-ext-install zip intl pcntl
 
 RUN bash -c "wget http://getcomposer.org/composer-stable.phar && mv composer-stable.phar /usr/local/bin/composer"
 RUN chmod +x /usr/local/bin/composer

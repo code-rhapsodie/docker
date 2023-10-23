@@ -4,19 +4,20 @@ on:
   push:
     branches:
       - 'master'
-
+  schedule:
+    - cron: '30 5 * * 1'
 jobs:
   ansible-build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         include:
-          - image: ansible
-            subdir: debian-buster
+          #- image: ansible
+          #  subdir: debian-buster
           - image: ansible
             subdir: debian-buster-tools
-          - image: ansible
-            subdir: ezplatform-toolbox
+          #- image: ansible
+          #  subdir: ezplatform-toolbox
           - image: docker-compose
             subdir: latest
           - image: ansible

@@ -3,7 +3,7 @@ FROM python:3-trixie
 LABEL org.opencontainers.image.authors="Jean-Baptiste N. <jean-baptiste@code-rhapsodie.fr>"
 
 RUN apt-get update && apt-get install -y openssh-client make git rsync && \
-	pip install ansible && \
+	pip install ansible ansible-core==2.17.14 && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/*
 
 # default command: display Ansible version

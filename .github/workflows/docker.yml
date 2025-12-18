@@ -15,7 +15,7 @@ jobs:
           #- image: ansible
           #  subdir: debian-buster
           - image: ansible
-            subdir: debian-buster-tools
+            subdir: debian-trixie-tools
           #- image: ansible
           #  subdir: ezplatform-toolbox
           - image: docker-compose
@@ -25,16 +25,16 @@ jobs:
           - image: php
             subdir: 7.4-fpm-node10
           - image: php
-            subdir: 8.2-fpm            
+            subdir: 8.2-fpm
     steps:
-      - 
+      -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v2
-      - 
+      -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
-      - 
+      -
         name: Log in to the Container registry
         uses: docker/login-action@v2
         with:

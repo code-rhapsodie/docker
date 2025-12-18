@@ -18,14 +18,14 @@ jobs:
             subdir: debian-trixie-tools
           #- image: ansible
           #  subdir: ezplatform-toolbox
-          - image: docker-compose
-            subdir: latest
-          - image: ansible
-            subdir: alpine
-          - image: php
-            subdir: 7.4-fpm-node10
-          - image: php
-            subdir: 8.2-fpm
+#          - image: docker-compose
+#            subdir: latest
+#          - image: ansible
+#            subdir: alpine
+#          - image: php
+#            subdir: 7.4-fpm-node10
+#          - image: php
+#            subdir: 8.2-fpm
     steps:
       -
         name: Set up QEMU
